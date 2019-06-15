@@ -1,146 +1,277 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-* {
-    box-sizing: border-box;
+html,
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+.home {
+  width: 430px;
+  margin: 0 auto;
 }
-
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+.home .top-content header .image-logo {
+  display: flex;
+  justify-content: center;
 }
-
-p {
-    line-height: 1.4;
+.home .top-content header .image-logo .logo {
+  padding: 30px 0;
 }
-
-.container {
-    width: 800px;
-    margin: 0 auto;
+.home .top-content header nav {
+  display: flex;
+  flex-flow: column wrap;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.home .top-content header nav a {
+  font-size: 1.5rem;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.home .jumbo {
+  width: 100%;
 }
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.home .top-content {
+  border-bottom: 1px solid black;
 }
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+.home .top-content .text-container {
+  margin: 15px 10px;
 }
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.home .top-content .text-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.home .top-content .text-container p {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+.home .middle-content {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed black;
 }
-
-.bottom-content .text-container {
-    padding-right: 4%;
+.home .middle-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+.home .middle-content .boxes {
+  color: white;
 }
-
+.home .middle-content .boxes .col-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.home .middle-content .boxes .col-1 .box {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+.home .middle-content .boxes .col-1 .one {
+  background: yellow;
+}
+.home .middle-content .boxes .col-1 .two {
+  background: green;
+}
+.home .middle-content .boxes .col-1 .three {
+  background: blue;
+}
+.home .middle-content .boxes .col-2 {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+.home .middle-content .boxes .col-2 .box {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  text-align: center;
+  align-self: center;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.home .middle-content .boxes .col-2 .four {
+  background: pink;
+}
+.home .middle-content .boxes .col-2 .five {
+  background: teal;
+}
+.home .middle-content .boxes .col-2 .six {
+  background: purple;
+}
+.home .middle-content .boxes .col-3 {
+  display: flex;
+  justify-content: space-around;
+}
+.home .middle-content .boxes .col-3 .box {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.home .middle-content .boxes .col-3 .seven {
+  background: red;
+}
+.home .middle-content .boxes .col-3 .eight {
+  background: purple;
+}
+.home .middle-content .boxes .col-3 .nine {
+  background: orange;
+}
+.home .bottom-content {
+  margin: 10px 10px 20px;
+}
+.home .bottom-content .text-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.home .bottom-content .text-container p {
+  font-size: 1.5rem;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
 footer {
-    width: 100%;
-    background: black;
+  background: black;
+  width: 100%;
+  padding: 20px 0;
 }
-
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-
 footer nav a {
-    color: white;
-    text-decoration: none;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
 }
