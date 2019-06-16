@@ -1,3 +1,4 @@
+// MOBILE
 .home {
     .middle-content {
         margin-top: 15px;
@@ -9,37 +10,38 @@
             margin-bottom: 15px;
         }
 
-        .boxes {
-            // display: flex;
-            // justify-content: space-between;
-            // flex-flow: row wrap;
+        .mobile-boxes {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-flow: row wrap;
             // width: 20px;
             // margin: 0 auto;
             // background: red;
             // margin-bottom: 15px;
             color: white;
+            // background: blue;
 
-            .col-1 {
-                display: flex;
-                // justify-content: space-between;
-                justify-content: space-around;
-                margin-bottom: 30px;
-                // margin-right: 5%;
-                // margin-left: 9%;
-                // font-size: 5px;
+            .row-1 {
+                // margin-bottom: 10%;
+                // padding-bottom: 5%;
 
                 .box {
                     width: 100px;
                     height: 100px;
                     background: gray;
-                    text-align: center;
-                    align-self: center;
+                    // text-align: center;
+                    // align-self: center;
                     // vertical-align: middle;
                     font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 40%;
                 }
 
                 .one {
-                    background: yellow;
+                    background: teal;
                 }
 
                 .two {
@@ -47,61 +49,59 @@
                 }
 
                 .three {
-                    background: blue;
+                    background: yellow;
                 }
             }
 
-            .col-2 {
-                display: flex;
-                margin-bottom: 30px;
-                // flex-flow: row wrap;
-                // justify-content: space-between;
-                justify-content: space-around;
-                // margin-right: 5%;
+            .row-2 {
+                // margin-bottom: 5%;
 
                 .box {
                     width: 100px;
                     height: 100px;
                     background: gray;
-                    text-align: center;
-                    align-self: center;
-                    // height: 100%;
-                    display: inline-block;
-                    // background: blue;
+                    // text-align: center;
+                    // align-self: center;
+                    // vertical-align: middle;
                     font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 40%;
                 }
 
                 .four {
-                    background: pink;
+                    background: purple;
                 }
 
                 .five {
-                    background: teal;
+                    background: blue;
                 }
 
                 .six {
-                    background: purple;
+                    background: pink;
                 }
             }
 
-            .col-3 {
-                display: flex;
-                // flex-flow: row wrap;
-                justify-content: space-around;
-                // margin-bottom: 30px;
-                // margin-right: 5%;
+            .row-3 {
+                // margin-bottom: 5%;
 
                 .box {
                     width: 100px;
                     height: 100px;
                     background: gray;
-                    text-align: center;
-                    // margin: 5px;
+                    // text-align: center;
+                    // align-self: center;
+                    // vertical-align: middle;
                     font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 40%;
                 }
 
                 .seven {
-                    background: red;
+                    background: orange;
                 }
 
                 .eight {
@@ -109,10 +109,140 @@
                 }
 
                 .nine {
-                    background: orange;
+                    background: red;
                 }
             }
 
+            .ten {
+                background: limegreen;
+                display: none;
+            }
+        }
+
+        .boxes {
+            display: none;
+
+            .box {}
         }
     }
 }
+
+// TABLET
+@media (min-width: 760px) {
+    .home {
+        .middle-content {
+            margin-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed black;
+            // display: flex;
+            // flex-flow: row wrap;
+            // background: blue;
+
+
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+
+            .mobile-boxes {
+                display: none;
+
+                .box {}
+            }
+
+            .boxes {
+                display: block;
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: center;
+                // flex-flow: row nowrap;
+                // width: 100%;
+                // margin: 0 auto;
+                // background: red;
+                // margin-bottom: 15px;
+                // background: red;
+                color: white;
+
+                .row-1 {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        background: gray;
+                        // text-align: center;
+                        // align-self: center;
+                        // vertical-align: middle;
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 5%;
+                    }
+
+                    .one {
+                        background: teal;
+                    }
+
+                    .two {
+                        background: green;
+                    }
+
+                    .three {
+                        background: yellow;
+                    }
+
+                    .four {
+                        background: purple;
+                    }
+
+                    .five {
+                        background: blue;
+                    }
+                }
+
+                .row-2 {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        background: gray;
+                        // text-align: center;
+                        // align-self: center;
+                        // vertical-align: middle;
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .six {
+                        background: pink;
+                    }
+
+                    .seven {
+                        background: orange;
+                    }
+
+                    .eight {
+                        background: purple;
+                    }
+
+                    .nine {
+                        background: red;
+                    }
+
+                    .ten {
+                        background: limegreen;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// DESKTOP
