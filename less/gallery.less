@@ -11,20 +11,23 @@
         }
 
         .mobile-boxes {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-flow: row wrap;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-around;
+            // flex-flow: row wrap;
             // width: 20px;
             // margin: 0 auto;
             // background: red;
-            // margin-bottom: 15px;
+            margin-bottom: 0;
             color: white;
             // background: blue;
 
             .row-1 {
-                // margin-bottom: 10%;
+                margin-bottom: 10%;
                 // padding-bottom: 5%;
+                display: flex;
+                justify-content: space-around;
+
 
                 .box {
                     width: 100px;
@@ -37,7 +40,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 40%;
+                    // margin-bottom: 40%;
                 }
 
                 .one {
@@ -54,7 +57,9 @@
             }
 
             .row-2 {
-                // margin-bottom: 5%;
+                margin-bottom: 10%;
+                display: flex;
+                justify-content: space-around;
 
                 .box {
                     width: 100px;
@@ -67,7 +72,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 40%;
+                    // margin-bottom: 40%;
                 }
 
                 .four {
@@ -84,7 +89,9 @@
             }
 
             .row-3 {
-                // margin-bottom: 5%;
+                margin-bottom: 5%;
+                display: flex;
+                justify-content: space-around;
 
                 .box {
                     width: 100px;
@@ -97,7 +104,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 40%;
+                    // margin-bottom: 40%;
                 }
 
                 .seven {
@@ -246,3 +253,128 @@
 }
 
 // DESKTOP
+@media (min-width: 1000px) {
+    .home {
+        .middle-content {
+            margin-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed black;
+            // display: flex;
+            // flex-flow: row wrap;
+            // background: blue;
+
+
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+
+            .mobile-boxes {
+                display: none;
+
+                .box {}
+            }
+
+            .boxes {
+                display: block;
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: center;
+                // flex-flow: row nowrap;
+                // width: 100%;
+                // margin: 0 auto;
+                // background: red;
+                // margin-bottom: 15px;
+                // background: red;
+                color: white;
+
+                .row-1 {
+                    display: flex;
+                    justify-content: space-around;
+
+
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        background: gray;
+                        // text-align: center;
+                        // align-self: center;
+                        // vertical-align: middle;
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 5%;
+
+                        &:nth-of-type(odd) {
+                            background: black;
+                        }
+                    }
+
+                    .one {
+                        background: teal;
+                    }
+
+                    .two {
+                        background: green;
+                    }
+
+                    .three {
+                        background: yellow;
+                    }
+
+                    .four {
+                        background: purple;
+                    }
+
+                    .five {
+                        background: blue;
+                    }
+                }
+
+                .row-2 {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .box {
+                        width: 100px;
+                        height: 100px;
+                        background: gray;
+                        // text-align: center;
+                        // align-self: center;
+                        // vertical-align: middle;
+                        font-size: 1.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &:nth-of-type(even) {
+                            background: black;
+                        }
+                    }
+
+                    .six {
+                        background: pink;
+                    }
+
+                    .seven {
+                        background: orange;
+                    }
+
+                    .eight {
+                        background: purple;
+                    }
+
+                    .nine {
+                        background: red;
+                    }
+
+                    .ten {
+                        background: limegreen;
+                    }
+                }
+
+            }
+        }
+    }
+}
